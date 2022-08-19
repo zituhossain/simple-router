@@ -36,3 +36,84 @@
     transform: rotate(360deg);
   }
 }
+
+/* Custom CSS */
+nav {
+  height: 10vh;
+  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link {
+  color: white;
+  margin: 1rem;
+  text-decoration: none;
+  font-size: large;
+}
+.nav-link:hover {
+  color: orange;
+}
+nav .active {
+  color: yellow;
+}
+
+section {
+  display: grid;
+  grid-gap: 1rem;
+}
+article {
+  background-color: thistle;
+  padding: 1rem;
+}
+@media screen and (min-width: 600px) {
+  section {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+.login_btn {
+  background-color: lightseagreen;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+.logout_btn {
+  background-color: crimson;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+.home_btn {
+  background-color: cornflowerblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 25px;
+}
